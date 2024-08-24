@@ -20,11 +20,11 @@ btn.addEventListener("click", async (event) => {
   }
 });
 
-form.onsubmit = () => {
-  console.log("prmpt");
-};
-
 function showPseudoContent() {
-  document.getElementById("instruct").style.display = "none";
-  document.getElementById("load").style.display = "block";
+  if (document.getElementById("instruct")) {
+    document.getElementById("instruct").style.display = "none";
+  }
+  if (document.getElementById("load")) {
+    document.getElementById("load").style.display = "block";
+  }
 }
