@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generative AI Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="main">
+      <h1>This Page is Using Gemini to give response.</h1>
+      <div id="frame">
+        <div id="response">
+          <div id="instruct">Here the Response to your prompt goes...</div>
+          <div id="load">
+            <div class="heading"></div>
+            <div class="load_content">
+              <div class="line" style="width: 85%"></div>
+              <div class="line"></div>
+              <div class="line" style="width: 40%"></div>
+            </div>
+            <div class="heading" style="width: 50%"></div>
+            <div class="load_content">
+              <div class="line" style="width: 85%"></div>
+              <div class="line"></div>
+              <div class="line" style="width: 40%"></div>
+            </div>
+          </div>
+        </div>
+        <form id="input">
+          <input
+            id="prmpt"
+            type="text"
+            name="prmpt"
+            placeholder="Enter your Prompt"
+            autocomplete="off"
+          />
+          <button id="submit">Go</button>
+        </form>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
