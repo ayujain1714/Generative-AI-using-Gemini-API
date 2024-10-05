@@ -4,6 +4,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const markdown = require("markdown").markdown;
+/// redcarpet markdown can also be used for code blocks.
 
 const {
   GoogleGenerativeAI,
